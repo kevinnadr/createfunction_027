@@ -2,11 +2,11 @@ def perubahan_suhu(nilai_suhu, satuan_suhu):
     if satuan_suhu.upper() == 'C':
         # Mengonversi dari Celsius ke Fahrenheit
         hasil = (nilai_suhu * 9/5) + 32
-        return f"{nilai_suhu}°C sama dengan {hasil:.2f}°F"
+        return f"{nilai_suhu}C sama dengan {hasil:.2f}F"
     elif satuan_suhu.upper() == 'F':
         # Mengonversi dari Fahrenheit ke Celsius
         hasil = (nilai_suhu - 32) * 5/9
-        return f"{nilai_suhu}°F sama dengan {hasil:.2f}°C"
+        return f"{nilai_suhu}F sama dengan {hasil:.2f}C"
     else:
         return "Satuan suhu tidak valid. Gunakan 'C' untuk Celsius atau 'F' untuk Fahrenheit."
 
